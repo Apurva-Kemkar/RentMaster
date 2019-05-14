@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+  Transit by TEMPLATED
+  templated.co @templatedco
+  Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome to Rentmaster</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+      <link rel="stylesheet" href="css/skel.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style-xlarge.css" />
+      <link rel="stylesheet" href="example-image-based" />
+      <link rel="stylesheet" href="example-pure-css"/>
+
+    </noscript>
+  <title> customer form</title>
+  <script type="text/javascript">
+    function validate(form) 
+    {
+      var Name=form.name.value;
+      var R_ADD=form.res_add.value;
+      //var S_ADD=form.sup_add.value;
+      var con_num=form.number.value;
+      var First=/^[0-9]/;
+      var Sec=/^[A-Za-z]/;
+      
+      if(Name.length==0)
+      {
+        alert("Enter a valid Name!");
+        return false;
+      }
+
+      else if(!First.test(con_num) || con_num.length!=10)
+      {
+        alert("Enter valid number");
+        return false;
+      }
+
+      else (R_ADD.length==0)
+      {
+        alert("You must enter the  both the addresses");
+        return false;
+      }
+
+       
+       //else(S_ADD.length==0)
+       //{
+        //alert("You must enter the  both the addresses");
+        //return false;
+       //}
+
+    }
+    
+  </script>
+</head>
+<body>
+  <section id="three" class="wrapper style3 special">
+        <div class="container">
+          <header class="major">
+            <h3>Customer Details Please!</h3>
+            <p>NOTE: All fields are mandatory.</p>
+          </header>
+        </div>
+        <div class="container 50%">
+          <form method="post" action="form1.php">
+            <div class="row uniform">
+              <div class="6u 12u$(small)">
+                Enter your name:<input name="name" id="name" value="" placeholder="Name" type="text">
+              </div>
+               <div class="6u 12u$(small)">
+                Contact number:<input name="number" id="number" value="" placeholder="Number" type="text">
+              </div>
+              <div class="6u$ 12u$(small)">
+                E-mail id: <input name="email" id="email" value="" placeholder="Email" type="email">
+              </div>
+              <div class="6u 12u$(small)">
+                Enter username:<input name="username" id="name" value="" placeholder="UserName" type="text">
+              </div>
+              <div class="6u 12u$(small)">
+                Enter new password:<input name="password" id="name" value="" placeholder="Password" type="password">
+              </div>
+              <div class="6u 12u$(small)">
+                Confirm Password:<input name="password" id="name" value="" placeholder="Password" type="password">
+              </div>
+              <div class="12u$">
+                Address:<textarea name="res_add" id="res_add" placeholder="Address" rows="6"></textarea>
+              </div>
+              
+                <!--
+                <div class="12u$">
+                Supply address:<textarea name="sup_add" id="sup_add" placeholder="Supply Address" rows="6"></textarea>
+              </div>
+              <div class="6u 12u$(small)">
+               Delivery date(mm/dd/yyyy): <input name="ddate" id="ddate" value="" placeholder="DD/MM/YY" type="date">
+              </div>
+              <br>
+              
+              <div class="6u 12u$(small)">
+               No. of jugs:<input name="no_jugs" id="no_jugs" value="" placeholder="No. of jugs" type="text">
+               </div>
+                  <div class="example">
+                  Select an option: <br>
+                    <div>
+                      <input id="radio1" type="radio" name="radio" value="1" checked="checked"><label for="radio1">Daily</label>
+                    </div>
+                    <div>
+                      <input id="radio2" type="radio" name="radio" value="2"><label for="radio2">Alternate</label>
+                    </div>
+                  </div>
+                  <div class="example">
+                  Size: <br>
+                    <div>
+                      <input id="radio11" type="radio" name="radio111" value="1" checked="checked"><label for="radio11">15 liters</label>
+                    </div>
+                    <div>
+                      <input id="radio22" type="radio" name="radio111" value="2"><label for="radio22">20 liters</label>
+                    </div>-->
+                  </div>
+              
+                    <br>
+              <div class="12u$">
+                <ul class="actions">
+                  <li><input value="Submit" class="special big" type="submit" ></li>
+                  <li><input value="Reset" class="special big" type="reset"></li>
+                </ul>
+              </div>
+          </form>
+        </div>
+</body>
+</html>

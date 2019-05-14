@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+	Transit by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Welcome to AquaKing</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	
+	<title>Pincode</title>
+		
+	<script type="text/javascript">
+		function validate(form) 
+		{
+			var pin1=form.pin.value;
+			var re=/^[0-9]/;
+			if(!re.test(pin1))
+			{
+				alert("Enter a valid pincode(digits only)");
+				return false;
+			}
+			
+			else{
+				
+			window.open("cust_form.html");
+		
+			}
+			
+		}
+		
+	</script>
+</head>
+<body>
+	
+		<section id="three" class="wrapper style3 special">
+				<div class="container">
+					<header class="major">
+						<h2>Pincode</h2>
+						<p>Please enter your pincode so we can check if we deliver in your area.</p>
+					</header>
+				</div>
+		
+			
+			<div class="container 50%">
+					<form method="get" action="" onsubmit="return validate(this);" >
+						<div class="row uniform">
+							<div class="6u 12u$(small)">
+								<input name="pin" id="pin" value="" placeholder="Pincode" type="text">
+							</div>
+						<div class="12u$">
+								<ul class="actions">
+									<li><input value="Check Pincode" class="special big" type="submit"></li>
+								</ul>
+						</div>
+						</div>
+					</form>
+			</div>
+		</section>	
+</body>
+</html>
